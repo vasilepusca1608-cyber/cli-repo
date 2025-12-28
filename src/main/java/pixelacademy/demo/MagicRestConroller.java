@@ -25,4 +25,19 @@ public class MagicRestConroller {
                 ", Wizard house: " + wizardHouse +
                 " Wizard spell: " + wizardSpell;
     }
+
+    @GetMapping("/name")
+    public String getWizardName(){
+        return "Wizard name: " + wizardName;
+    }
+
+    @GetMapping("/house")
+    public String getWizardHouse(){
+        return "Wizard house: " + wizardHouse;
+    }
+
+    @GetMapping("/spell")
+    public String getWizardSpell(){
+        return "Wizard spell: " + wizardSpell;
+    }
 }
